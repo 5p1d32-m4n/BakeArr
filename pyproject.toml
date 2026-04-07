@@ -1,0 +1,29 @@
+[project]
+name = "bakearr-backend"
+version = "0.1.0"
+description = "My attempt at remaking the infamous 'Servarr' stack."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.18.4",
+    "asyncio>=4.0.0",
+    "celery[redis]>=5.6.2",
+    "cryptography>=46.0.5",
+    "fastapi[standard]>=0.135.2",
+    "guessit>=3.8.0",
+    "httpx>=0.28.1",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic-settings>=2.13.1",
+    "python-jose[cryptography]>=3.5.0",
+    "sqlalchemy[asyncio]>=2.0.48",
+    "watchdog>=6.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+    "ruff>=0.15.7",
+]
